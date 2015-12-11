@@ -31,8 +31,6 @@ static void		pty_print_begend(t_script *sc, int end)
 		write(sc->fd_file, "done", sizeof("done") - 1);
 	write(sc->fd_file, " on ", sizeof(" on ") - 1);
 	write(sc->fd_file, stime, ft_strlen(stime));
-	if (!end)
-		write(sc->fd_file, "\n", 1);
 }
 
 static size_t	tablen(t_script *sc)
