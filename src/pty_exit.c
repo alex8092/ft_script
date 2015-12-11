@@ -18,7 +18,7 @@ void	pty_exit(t_script *sc)
 	close(sc->fd_file);
 	if (!sc->flag_q)
 	{
-		ft_putstr("Script done, output file is ");
+		ft_putstr("\nScript done, output file is ");
 		ft_putstr(sc->outfile);
 		ft_putstr("\n");
 	}
